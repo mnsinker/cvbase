@@ -1,0 +1,254 @@
+{
+  "project": "Decision Engine",
+  "problem_space": {
+    "current_problems": [
+      {
+        "frames": [
+          {
+            "title": "Decision Logic Is Fragmented",
+            "content": [
+              "Organizations make decisions every day. However, the logic behind those decisions is often scattered across:",
+              "excel spreadsheets",
+              "slide decks",
+              "business rules",
+              "code",
+              "tribal knowledge",
+              "As a result, decisions become difficult to understand, govern, test, and improve."
+            ]
+          }
+        ],
+        "project_response": "AI Decision Engine: turns decision logic from an implicit process into an explicit system."
+      }
+    ],
+    "future_problems": [
+      {
+        "frames": [
+          {
+            "title": "Decision Execution Is Not Enough",
+            "content": [
+              "Making decisions is only the first step. Organizations must also determine:",
+              "Context + Policies + Goals → Next Best Action",
+              "and continuously learn from the outcomes."
+            ]
+          }
+        ],
+        "project_response": "The long-term objective: a decision system capable of planning, executing, evaluating, and improving decisions over time."
+      }
+    ]
+  },
+  "capabilities": {
+    "current_capabilities": [
+      {
+        "title": "Decision Context",
+        "description": "Define the information required for a decision.",
+        "supports": [
+          "OrderSummary → CouponEligibility → CouponDecision"
+        ],
+        "includes": [
+          "Makes decision inputs explicit."
+        ]
+      },
+      {
+        "title": "Decision Planning",
+        "description": "Derive execution order from dependency relationships.",
+        "supports": [
+          "Target Entity → Dependency Graph → Execution Plan"
+        ],
+        "includes": [
+          "planning",
+          "validation",
+          "dependency management"
+        ]
+      },
+      {
+        "title": "Decision Traceability",
+        "description": "Make decision behavior observable and explainable.",
+        "supports": [
+          "Execution Plan → Execution Trace → Review"
+        ],
+        "includes": [
+          "dependency graphs",
+          "execution traces",
+          "runtime outputs",
+          "Enables debugging and governance of decision systems."
+        ]
+      }
+    ],
+    "future_capabilities": [
+      {
+        "title": "Policy Governance",
+        "description": "Support policy ownership, lifecycle management, approval, and versioning.",
+        "supports": [
+          "Policy → Version → Approval → Deployment"
+        ]
+      },
+      {
+        "title": "Decision Learning",
+        "description": "Turn decision outcomes into reusable knowledge.",
+        "supports": [
+          "Decision → Outcome → Feedback → Policy Updates"
+        ],
+        "includes": [
+          "memory updates",
+          "context updates",
+          "policy updates",
+          "goal review",
+          "evaluation",
+          "experimentation",
+          "optimization"
+        ]
+      },
+      {
+        "title": "Decision Coordination",
+        "description": "Coordinate decisions across multiple contexts, policies and domains.",
+        "supports": [
+          "Contexts + Policies + Goals → Coordinated Actions"
+        ],
+        "includes": [
+          "Single-Agent Coordination",
+          "Multi-Agent Coordination"
+        ]
+      }
+    ]
+  },
+  "architecture": {
+    "architectural_goal": {
+      "from": "Context → Decision",
+      "toward": "Context + Memory + Policies + Goals → Next Best Action",
+      "purpose": "The architecture is designed to make decision making observable, testable, and evolvable."
+    },
+    "dynamic_flow": [
+      "Request",
+      "Target Entity",
+      "Planner",
+      "Execution Plan",
+      "Runtime",
+      "Entity Production",
+      "Policy Evaluation",
+      "Decision"
+    ],
+    "static_structure": [
+      {
+        "title": "Context Layer",
+        "responsibilities": [
+          "define the information required for decisions"
+        ],
+        "core_components": [
+          "Entities"
+        ]
+      },
+      {
+        "title": "Planning Layer",
+        "responsibilities": [
+          "derive execution order from dependencies"
+        ],
+        "core_components": [
+          "Planner",
+          "Validator"
+        ]
+      },
+      {
+        "title": "Execution Layer",
+        "responsibilities": [
+          "execute decision workflows and produce entities"
+        ],
+        "core_components": [
+          "Runtime",
+          "Tools"
+        ]
+      },
+      {
+        "title": "Policy Layer",
+        "responsibilities": [
+          "evaluate business rules and generate decisions"
+        ],
+        "core_components": [
+          "Policies"
+        ]
+      },
+      {
+        "title": "Relationship Layer",
+        "responsibilities": [
+          "model dependencies between entities"
+        ],
+        "core_components": [
+          "Dependency Graph"
+        ]
+      },
+      {
+        "title": "Traceability Layer",
+        "responsibilities": [
+          "make decision behavior observable and explainable"
+        ],
+        "core_components": [
+          "Execution Plans",
+          "Execution Traces",
+          "Runtime Outputs"
+        ]
+      }
+    ]
+  },
+  "stories": {
+    "story_groups": [
+      {
+        "title": "Core Discovery",
+        "core_discovery_title": "Decide Before Execute",
+        "core_discovery_content": "The architecture evolved by progressively moving decisions out of runtime.",
+        "stories": [
+          {
+            "title": "Dependency Discovery — Plan Before Execute",
+            "career_spine": [
+              "workflow",
+              "systems"
+            ],
+            "advanced_themes": [
+              "automation",
+              "ai-systems"
+            ],
+            "problem": "Before: Execution path did not exist before runtime. while loop: - discover dependency - insert step. Consequences: Pipeline Black Box; execution paths could not be reviewed before execution; dependency issues could only be discovered during execution.",
+            "discovery": "Planning and execution are different concerns. Planning answers: What should happen? Execution answers: Make it happen.",
+            "outcome": "After: Dependency Graph → Planner → Execution Plan. Runtime consumed an execution plan, instead of constructing one. Benefits: catch dependency issues before runtime; review execution paths before runtime."
+          },
+          {
+            "title": "Dependency Correctness — Validate Before Execute",
+            "career_spine": [
+              "systems"
+            ],
+            "advanced_themes": [
+              "governance"
+            ],
+            "problem": "Before: Dependency Graph existed, correctness was still checked during execution. Examples: cycle detection; missing producers. Consequences: graph issues were discovered only after execution began.",
+            "discovery": "Validation is not execution. Planning answers: What should run? Validation answers: Can it run safely? Execution should: assume correctness. Validation should: establish correctness.",
+            "outcome": "After: Validator. Benefits: detect graph issues before execution."
+          },
+          {
+            "title": "Dependency Definition — Derive Before Duplicate",
+            "career_spine": [
+              "information-modeling",
+              "systems"
+            ],
+            "advanced_themes": [
+              "governance"
+            ],
+            "problem": "Before: Dependency definitions existed in multiple places. Examples: Tool Signature; Tool Registry; Entity Mapping. Consequences: the same information required multiple updates; dependency definitions could drift out of sync.",
+            "discovery": "Tool signatures already described: inputs; outputs. Represent information once. Derive everything else.",
+            "outcome": "After: Tool Signature → Derived Dependencies. Benefits: dependency definitions exist in one place; graph relationships no longer require manual synchronization."
+          },
+          {
+            "title": "Layer Ownership — Separate Policy From Execution",
+            "career_spine": [
+              "systems"
+            ],
+            "advanced_themes": [
+              "governance",
+              "ai-systems"
+            ],
+            "problem": "Before: Business rules lived inside tools. Consequences: policy changes required tool changes.",
+            "discovery": "Facts answer: What is true? Policies answer: What should happen? Facts and decisions evolve at different rates. They require different ownership boundaries.",
+            "outcome": "After: Policy Layer. Benefits: policy changes no longer require tool changes."
+          }
+        ]
+      }
+    ]
+  }
+}
