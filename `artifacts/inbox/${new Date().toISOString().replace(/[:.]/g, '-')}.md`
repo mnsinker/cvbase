@@ -1,0 +1,1 @@
+Jordan Peterson说目标决定注意力，这让我想到Knowledge OS里的Policy Layer。
