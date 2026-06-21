@@ -1,3 +1,0 @@
-# Test
-
-Hello Knowledge OS

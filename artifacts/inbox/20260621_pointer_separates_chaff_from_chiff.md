@@ -1,1 +1,0 @@
-jordan peterson said: pointer is the attempt to separate chiff from chaff
