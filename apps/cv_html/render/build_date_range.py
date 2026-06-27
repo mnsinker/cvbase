@@ -1,4 +1,4 @@
-from domains.cv.render.normalize_date import normalize_date
+from apps.cv_html.render.normalize_date import normalize_date
 
 
 def build_date_range(start_date: str, end_date: str) -> str:

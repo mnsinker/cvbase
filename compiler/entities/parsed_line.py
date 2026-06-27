@@ -4,6 +4,9 @@ from compiler.entities.unified_ast import UnifiedAST
 
 @dataclass
 class ParsedLine:
-    unified_ast: UnifiedAST
-    data: str
+    line_no: int
+    raw: str
+
+    ast_type: UnifiedAST
+    content: str
     indent: int

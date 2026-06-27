@@ -1,4 +1,4 @@
-from domains.cv.render.normalize_date import (
+from apps.cv_html.render.normalize_date import (
     normalize_date,
 )
 

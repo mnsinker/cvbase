@@ -1,12 +1,12 @@
 from __future__ import annotations
 from domains.cv.entities.sections import Sections
-from domains.cv.sections_builder.extract_md_sections import extract_md_sections
-from domains.cv.sections_builder.parse_projects import parse_projects
-from domains.cv.sections_builder.parse_experiences import parse_experiences
-from domains.cv.sections_builder.parse_earlier_experiences import parse_earlier_experiences
-from domains.cv.sections_builder.parse_education import parse_education
-from domains.cv.sections_builder.parse_summary import parse_summary
-from domains.cv.sections_builder.parse_profile import parse_profile
+from domains.cv.builder.extract_md_sections import extract_md_sections
+from domains.cv.builder.parse_projects import parse_projects
+from domains.cv.builder.parse_experiences import parse_experiences
+from domains.cv.builder.parse_earlier_experiences import parse_earlier_experiences
+from domains.cv.builder.parse_education import parse_education
+from domains.cv.builder.parse_summary import parse_summary
+from domains.cv.builder.parse_profile import parse_profile
 
 
 def build_sections(markdown: str) -> Sections:

@@ -1,6 +1,6 @@
 from compiler.entities.mapping_rule import MappingRule
 from compiler.entities.unified_ast import UnifiedAST
-from domains.portfolio.domain.entities import PortfolioField
+from domains.portfolio.entities.entities import PortfolioField
 
 
 PORTFOLIO_MAPPING_RULES = (

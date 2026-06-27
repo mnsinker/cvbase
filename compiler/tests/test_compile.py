@@ -1,3 +1,11 @@
+from pathlib import Path
+
+from compiler.compile_file import compile_file
+from compiler.compile_markdown import compile_markdown
+from compiler.engine.walk_nodes import walk_nodes
+from domains.portfolio.semantic_registry import PORTFOLIO_SEMANTIC_REGISTRY
+
+question_forge_md = """
 ---
 id: question_forge
 experience_fk:
@@ -352,3 +360,32 @@ Outcome
         - connect questions to learning goals
         - use student state as decision context
         - prepare the architecture for next-best-action recommendations
+
+"""
+
+
+def test_compile_markdown():
+    roots = compile_markdown(question_forge_md, PORTFOLIO_SEMANTIC_REGISTRY)
+
+    stories = roots[-1] # 最后一个章节是 Stories
+    assert stories.content == "Stories"
+    career_spine_nodes = []
+    for node in walk_nodes(roots):
+        if node.semantic_type == "career_spine":
+            career_spine_nodes.append(node)
+    assert len(career_spine_nodes) > 0
+
+
+
+def test_compile_file():
+    roots = compile_file(path=Path("knowledge/narratives/job_projects/question_forge.md"), registry=PORTFOLIO_SEMANTIC_REGISTRY)
+
+    stories = roots[-1]  # 最后一个章节是 Stories
+    assert stories.content == "Stories"
+
+    career_spine_nodes = []
+    for node in walk_nodes(roots):
+        if node.semantic_type == "career_spine":
+            career_spine_nodes.append(node)
+    assert len(career_spine_nodes) > 0
+

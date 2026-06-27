@@ -5,10 +5,10 @@ from pathlib import Path
 from domains.cv.entities.project import (
     Project,
 )
-from domains.cv.render.render_bullets import (
+from apps.cv_html.render.render_bullets import (
     render_bullets,
 )
-from domains.cv.render.normalize_name import (
+from apps.cv_html.render.normalize_name import (
     normalize_name,
 )
 

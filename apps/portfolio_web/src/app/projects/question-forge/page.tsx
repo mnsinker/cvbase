@@ -6,7 +6,7 @@ import { ProjectRenderer } from '../../../components/project/ProjectRenderer'
 
 const JSON_PATH = path.join(
   process.cwd(),
-  '../../content/views/portfolio_views/question_forge_portfolio_en.json',
+  '../../domains/portfolio/output/question_forge_portfolio_en.json',
 )
 
 export default function QuestionForgePage() {

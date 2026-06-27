@@ -1,7 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 from domains.cv.entities.earlier_experience import EarlierExperience
-from domains.cv.render.build_date_range import build_date_range
+from apps.cv_html.render.build_date_range import build_date_range
 
 
 TEMPLATES_DIR = (

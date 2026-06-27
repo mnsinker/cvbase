@@ -3,38 +3,38 @@ from __future__ import annotations
 import shutil
 from pathlib import Path
 
-from domains.cv.sections_builder.build_sections import (
+from domains.cv.builder.build_sections import (
     build_sections,
 )
 
-from domains.cv.render.render_header_section import (
+from apps.cv_html.render.render_header_section import (
     render_header_section,
 )
 
-from domains.cv.render.render_summary_section import (
+from apps.cv_html.render.render_summary_section import (
     render_summary_section,
 )
 
-from domains.cv.render.render_projects_section import (
+from apps.cv_html.render.render_projects_section import (
     render_projects_section,
 )
 
-from domains.cv.render.render_experiences_section import (
+from apps.cv_html.render.render_experiences_section import (
     render_experiences_section,
 )
 
-from domains.cv.render.render_earlier_experiences_section import (
+from apps.cv_html.render.render_earlier_experiences_section import (
     render_earlier_experiences_section,
 )
 
-from domains.cv.render.render_education_section import (
+from apps.cv_html.render.render_education_section import (
     render_education_section,
 )
 
 
 BASE_DIR = Path(__file__).parents[2]
-TEMPLATES_DIR = (BASE_DIR/ "products/cv/templates")
-OUTPUT_DIR = (BASE_DIR/ "products/cv/output")
+TEMPLATES_DIR = (BASE_DIR/ "domains/cv/templates")
+OUTPUT_DIR = (BASE_DIR/ "domains/cv/output")
 
 
 def main(markdown_path: str) -> None:
@@ -82,5 +82,5 @@ def main(markdown_path: str) -> None:
 
 if __name__ == "__main__":
 
-    # main("products/cv/cv_md/cv_ai-fde_260613_view_zh.md")
-    main("products/cv/cv_md/cv_ai-fde_260613_view_en.md")
+    # main("domains/cv/inputs/cv_ai-fde_260613_view_zh.md")
+    main("domains/cv/inputs/cv_ai-fde_260613_view_en.md")

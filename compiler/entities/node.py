@@ -5,6 +5,10 @@ from compiler.entities.unified_ast import UnifiedAST
 
 @dataclass
 class Node:
-    type: UnifiedAST
+    ast_type: UnifiedAST
+
+    semantic_type: str | None = None
+    tags: list[str] = field(default_factory=list)
+
     content: str = ""
-    children: list[Node] = field(default_factory=list)
+    children: list["Node"] = field(default_factory=list)

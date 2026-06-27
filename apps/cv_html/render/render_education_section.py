@@ -3,8 +3,8 @@ from __future__ import annotations
 from pathlib import Path
 
 from domains.cv.entities.education import Education
-from domains.cv.render.build_date_range import build_date_range
-from domains.cv.render.render_bullets import (
+from apps.cv_html.render.build_date_range import build_date_range
+from apps.cv_html.render.render_bullets import (
     render_bullets,
 )
 

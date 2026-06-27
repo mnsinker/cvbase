@@ -1,0 +1,1 @@
+SemanticRegistry = dict[str, str]

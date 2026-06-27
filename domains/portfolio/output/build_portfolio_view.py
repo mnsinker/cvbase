@@ -13,15 +13,15 @@ from config.llm import (
 
 
 def resolve_schema() -> Path:
-    return ROOT / "architecture" / "project_schema.md"
+    return ROOT / "architecture" / "ss.project_schema.md"
 
 
 def resolve_output(project_name: str) -> Path:
     return (
         ROOT
-        / "content"
-        / "views"
-        / "portfolio_views"
+        / "domains"
+        / "portfolio"
+        / "output"
         / f"{project_name}_portfolio_en.json"
     )
 

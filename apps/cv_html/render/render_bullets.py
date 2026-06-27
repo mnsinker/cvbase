@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from domains.cv.render.render_markdown import render_markdown
+from apps.cv_html.render.render_markdown import render_markdown
 
 
 TEMPLATES_DIR = (

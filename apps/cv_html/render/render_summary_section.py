@@ -3,10 +3,10 @@ from __future__ import annotations
 from pathlib import Path
 
 from domains.cv.entities.summary import Summary
-from domains.cv.render.render_bullets import (
+from apps.cv_html.render.render_bullets import (
     render_bullets,
 )
-from domains.cv.render.render_markdown import render_markdown
+from apps.cv_html.render.render_markdown import render_markdown
 
 TEMPLATES_DIR = (
     Path(__file__).parent.parent
