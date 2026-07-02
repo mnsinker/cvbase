@@ -19,7 +19,7 @@ Knowledge Is Missing
         - trade-offs 
         - discoveries
         - capabilities
-
+    
     Root Cause: 
         Project information is captured, but never distilled into reusable knowledge.
     
@@ -758,6 +758,7 @@ Guideline
 
 
 ## Story: Function Design - Separate Problems Before Writing Logic
+<a id="funtion-design-separate-problems"></a>
 
 ### Question 1: How to design functions?
 
@@ -817,7 +818,7 @@ After
         update_stack()
 
 Key insight
-   
+
     Start with the goal.
     ↓
     Focus on one instance.
@@ -840,7 +841,7 @@ Background
 Case Study
 
     In the compiler, the rule system answers following question:
-
+    
         Previous Lines: 
             H1 Problem Space
             H2 Future Work
@@ -870,20 +871,20 @@ Case Study Walkthrough
             Example: Heading > indent / paragraph / everything? 🟢Yes
         Decision: 
             Keep. | Reason: Heading has a strict ordering.
-
+    
     ↓
-
+    
     Hypothesis 2. Can the remaining node types be ordered by one global priority?
         Evaluation: 
             Example: Paragraph > Bullet?    🟡︎Sometimes
             Example: Bullet > Paragraph?    🟡︎Sometimes
         Decision: 
             Reject. | Reason: No strict ordering exists.
-
+    
     The remaining nodes require another explanation.
-
+    
     ↓
-
+    
     Hypothesis 3. Indentation determines ownership for the remaining nodes.
         Evaluation: 
             Example:      🟢Yes
@@ -898,9 +899,9 @@ Case Study Walkthrough
         Decision: 
             - General Rule: Indentation.
             - Exception: Bullet Rule.
-
+    
     ↓
-
+    
     Final Design
         Heading
         ↓
@@ -915,7 +916,7 @@ Key Discovery
     Specific Rules
     ↓
     Exceptions
-
+    
     ⭐️ Each new rule handles what previous rules cannot.
 
 
@@ -960,7 +961,24 @@ CODE_BLOCK
 ├── Fence End
 └── Continue
 
-
 FRONT_MATTER
 ├── Delimiter
 └── Continue
+
+> # heading1
+>
+> some text 
+>
+> - some bullet 1 
+> - some bullet 2 
+
+
+
+这是 inline $G{\mu\nu} + \Lambda g{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$  可是后面还有内容. 
+
+```math
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}
+```
+
+
+
