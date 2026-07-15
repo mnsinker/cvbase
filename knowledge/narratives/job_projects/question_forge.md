@@ -226,6 +226,7 @@ Model Boundaries Before Understanding
 
 Career Spine: information-modeling, systems
 Advanced Themes: automation, ai-systems
+Excluded Visibility: True
 
 Problem
 

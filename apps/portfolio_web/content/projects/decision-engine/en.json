@@ -1,0 +1,2994 @@
+{
+    "type": "Document",
+    "annotations": [],
+    "inline_children": [],
+    "doc_children": [
+        {
+            "type": "FrontMatter",
+            "annotations": [],
+            "inline_children": [],
+            "doc_children": [],
+            "content": [
+                "id: decision_engine",
+                "experience_fk:",
+                "start:",
+                "end:"
+            ]
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Problem Space"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Current Problem"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Logic Is Fragmented"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Organizations make decisions every day. However, the logic behind those decisions is often scattered across:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "excel spreadsheets"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "slide decks"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "business rules"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "code"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "tribal knowledge"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "As a result, decisions become difficult to understand, govern, test, and improve."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "AI Decision Engine: turns decision logic from an implicit process into an explicit system."
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Future Problem"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Execution Is Not Enough"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Making decisions is only the first step. Organizations must also determine:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Context + Policies + Goals → Next Best Action"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "and continuously learn from the outcomes."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "The long-term objective: a decision system capable of planning, executing, evaluating, and improving decisions over time."
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "------"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Capabilities"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Current Capabilities"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Context"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Define the information required for a decision."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: OrderSummary → CouponEligibility → CouponDecision"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Makes decision inputs explicit."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Planning"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Derive execution order from dependency relationships."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: Target Entity → Dependency Graph → Execution Plan"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Including:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "planning"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "validation"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "dependency management"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Traceability"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Make decision behavior observable and explainable."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: Execution Plan → Execution Trace → Review"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Including:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "dependency graphs"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "execution traces"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "runtime outputs"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Enables debugging and governance of decision systems."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Future Capabilities"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Policy Governance"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Support policy ownership, lifecycle management, approval, and versioning."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: Policy → Version → Approval → Deployment"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Learning"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Turn decision outcomes into reusable knowledge."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: Decision → Outcome → Feedback → Policy Updates"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Potential update targets may include:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "memory updates"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "context updates"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "policy updates"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "goal review"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Potential mechanisms: "
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "evaluation"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "experimentation"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "optimization"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Coordination"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Coordinate decisions across multiple contexts, policies and domains."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports: Contexts + Policies + Goals → Coordinated Actions"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Potential implementations:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Single-Agent Coordination"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Multi-Agent Coordination"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Architecture"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Architectural Goal"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Build a foundation that can evolve from:"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Context → Decision"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "toward:"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Context + Memory + Policies + Goals → Next Best Action"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "The architecture is designed to make decision making observable, testable, and evolvable."
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Dynamic Flow"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Request "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Target Entity "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Planner "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Execution Plan "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Runtime "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Entity Production "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Policy Evaluation "
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Decision"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Static Structure"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Context Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: define the information required for decisions"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Entities"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Planning Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: derive execution order from dependencies"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Planner, Validator"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Execution Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: execute decision workflows and produce entities"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Runtime, Tools"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Policy Layer"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: evaluate business rules and generate decisions"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Policies"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Relationship Layer"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: model dependencies between entities"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Dependency Graph"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Traceability Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities: make decision behavior observable and explainable"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components: Execution Plans, Execution Traces, Runtime Outputs"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Stories"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Core Discovery"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decide Before Execute"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "The architecture evolved by progressively moving decisions out of runtime."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Examples: "
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Dependency Discovery — Plan Before Execute"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Dependency Correctness — Validate Before Execute"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Dependency Definition — Derive Before Duplicate"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Layer Ownership — Separate Policy From Execution"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "workflow",
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "automation",
+                                "ai-systems"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Dependency Discovery — Plan Before Execute"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before: Execution path did not exist before runtime."
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "while loop: "
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "discover dependency"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                },
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "insert step"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences: Pipeline Black Box"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "execution paths could not be reviewed before execution"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "dependency issues could only be discovered during execution"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Planning and execution are different concerns."
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Planning answers: What should happen?"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Execution answers: Make it happen."
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After: Dependency Graph"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "→ Planner "
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "→ Execution Plan"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Runtime consumed an execution plan, instead of constructing one"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits: "
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "catch dependency issues before runtime"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "review execution paths before runtime"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "governance"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Dependency Correctness — Validate Before Execute"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Dependency Graph existed, correctness was still checked during execution."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Examples:"
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "cycle detection"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                },
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "missing producers"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "graph issues were discovered only after execution began"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Validation is not execution.    "
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Planning answers: What should run?"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Validation answers: Can it run safely?"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Execution should: assume correctness."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Validation should: establish correctness."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Validator"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "detect graph issues before execution"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "information-modeling",
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "governance"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Dependency Definition — Derive Before Duplicate"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Dependency definitions existed in multiple places."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Examples:"
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "Tool Signature"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                },
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "Tool Registry"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                },
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "Entity Mapping"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "the same information required multiple updates"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "dependency definitions could drift out of sync"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Tool signatures already described:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "inputs"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "outputs"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Represent information once. Derive everything else."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Tool Signature → Derived Dependencies"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "dependency definitions exist in one place"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "graph relationships no longer require manual synchronization"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "governance",
+                                "ai-systems"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Layer Ownership — Separate Policy From Execution"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before: Business rules lived inside tools."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences: policy changes required tool changes"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Facts answer: What is true?"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Policies answer: What should happen?"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Facts and decisions evolve at different rates. They require different ownership boundaries."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After: Policy Layer"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits: policy changes no longer require tool changes"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        }
+    ]
+}

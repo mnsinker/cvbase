@@ -1,0 +1,3034 @@
+{
+    "type": "Document",
+    "annotations": [],
+    "inline_children": [],
+    "doc_children": [
+        {
+            "type": "FrontMatter",
+            "annotations": [],
+            "inline_children": [],
+            "doc_children": [],
+            "content": [
+                "id: decision_engine",
+                "experience_fk:",
+                "start:",
+                "end:"
+            ]
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "问题空间"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "当前问题"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策逻辑是碎片化的"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "组织每天都在做决策。然而，这些决策背后的逻辑通常分散在："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Excel 表格"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "演示文稿"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "业务规则"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "代码"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "部落知识"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "因此，决策变得难以理解、治理、测试和改进。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "AI 决策引擎：将决策逻辑从隐式流程转变为显式系统。"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "未来问题"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "执行决策还不够"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "做出决策只是第一步。组织还必须确定："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "上下文 + 策略 + 目标 → 下一步最佳行动"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "并持续从结果中学习。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "长期目标：构建一个能够随着时间推演、执行、评估和改进决策的决策系统。"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "------"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "能力"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "当前能力"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策上下文"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "定义决策所需的信息。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：订单摘要 → 优惠券资格 → 优惠券决策"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "让决策输入变得明确。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策规划"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "从依赖关系中推导执行顺序。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：目标实体 → 依赖图 → 执行计划"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "包括："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "规划"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "验证"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖管理"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策可追溯性"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "让决策行为可观察、可解释。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：执行计划 → 执行轨迹 → 审查"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "包括："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖图"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "执行轨迹"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "运行时输出"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持决策系统的调试与治理。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "未来能力"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "策略治理"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持策略所有权、生命周期管理、审批和版本控制。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：策略 → 版本 → 审批 → 部署"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策学习"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "将决策结果转化为可复用的知识。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：决策 → 结果 → 反馈 → 策略更新"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "潜在的更新目标包括："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "记忆更新"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "上下文更新"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "策略更新"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "目标复盘"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "潜在机制："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "评估"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "实验"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "优化"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "决策协调"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "协调跨多个上下文、策略和领域的决策。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "支持：上下文 + 策略 + 目标 → 协调行动"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "潜在实现："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "单智能体协调"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "多智能体协调"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "架构"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "架构目标"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "构建一个能够从："
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "上下文 → 决策"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "演进至："
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "上下文 + 记忆 + 策略 + 目标 → 下一步最佳行动"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "该架构旨在让决策过程可观察、可测试并可演进。"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "动态流程"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "请求"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 目标实体"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 规划器"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 执行计划"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 运行时"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 实体生成"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 策略评估"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ 决策"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "静态结构"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "上下文层"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：定义决策所需的信息"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：实体"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "规划层"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：从依赖关系中推导执行顺序"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：规划器、验证器"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "执行层"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：执行决策工作流并生成实体"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：运行时、工具"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "策略层"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：评估业务规则并生成决策"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：策略"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "关系层"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：为实体之间的依赖关系建模"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：依赖图"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "可追溯性层"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "职责：让决策行为可观察、可解释"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "核心组件：执行计划、执行轨迹、运行时输出"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "故事"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "核心发现"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "先决策，再执行"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "架构通过逐步将决策移出运行时而演进。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "示例："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖发现——执行前规划"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖正确性——执行前验证"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖定义——推导而非重复"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "层级所有权——将策略与执行分离"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "故事：依赖发现——执行前规划"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "职业主线：工作流、系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "高级主题：自动化、AI 系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "问题"
+                                }
+                            ],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之前：运行时之前不存在执行路径。"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "while 循环："
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "发现依赖"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                },
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "插入步骤"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "结果：流水线黑箱"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "执行路径无法在执行前被审查"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖问题只能在执行过程中被发现"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "*"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "发现"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "规划和执行是不同的关注点。"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "规划回答：应该发生什么？"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "执行回答：让它发生。"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "结果"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之后：依赖图"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "→ 规划器"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "→ 执行计划"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "运行时消费执行计划，而不是自行构建执行计划。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "优势："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "在运行时之前发现依赖问题"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "在运行时之前审查执行路径"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "故事：依赖正确性——执行前验证"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "职业主线：系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "高级主题：治理"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "问题"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之前："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖图已经存在，但正确性仍然在执行过程中检查。"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "示例："
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "环检测"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                },
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "缺少生产者"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "-"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "结果："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "图的问题只有在执行开始后才能被发现"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "发现"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "验证不是执行。"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "规划回答：应该运行什么？"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "验证回答：它能安全运行吗？"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "执行应该：假设正确性已经成立。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "验证应该：建立正确性。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "结果"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之后："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "验证器"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "优势："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "在执行前发现图的问题"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "故事：依赖定义——推导而非重复"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "职业主线：信息建模、系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "高级主题：治理"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "问题"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之前："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖定义存在于多个地方。"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "示例："
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "工具签名"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                },
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "工具注册表"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                },
+                                                {
+                                                    "type": "Paragraph",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "实体映射"
+                                                        }
+                                                    ],
+                                                    "doc_children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "结果："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "相同的信息需要多次更新"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖定义可能逐渐失去同步"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "发现"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "工具签名已经描述了："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "输入"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "输出"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "只表示一次信息。其他一切都从中推导。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "结果"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之后："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "工具签名 → 推导出的依赖"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "优势："
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "依赖定义只存在于一个地方"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "图关系不再需要手动同步"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "故事：层级所有权——将策略与执行分离"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "职业主线：系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "高级主题：治理、AI 系统"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "问题"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之前：业务规则存在于工具内部。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "结果：策略变更需要修改工具。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "发现"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "事实回答：什么是真的？"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "策略回答：应该发生什么？"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "事实和决策的演进速度不同，因此需要不同的所有权边界。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "结果"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "之后：策略层"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "优势：策略变更不再需要修改工具。"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        }
+    ]
+}

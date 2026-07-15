@@ -1,5 +1,5 @@
-from dataclasses import field, dataclass
-from typing import Union
+from typing import Any
+from dataclasses import field, dataclass, is_dataclass, fields
 
 """
 InlineNode
@@ -9,48 +9,61 @@ InlineNode
     * Children: InlineNode only, if allowed to have children.
 """
 
-type InlineNode = Union[Text, Strong, Italic, Strike, Underline, Image, Link, InlineMath, InlineCode]
-
+@dataclass
+class InlineNode:
+    inline_children: list["InlineNode"] = field(default_factory=list)
+    def to_dict(self) -> dict:
+        result = {"type": self.__class__.__name__}
+        for f in fields(self):
+            values = getattr(self, f.name)
+            result[f.name] = self._serialize(values)
+        return result
+    @staticmethod
+    def _serialize(values) -> Any:
+        if isinstance(values, list):
+            return [InlineNode._serialize(v) for v in values]
+        if hasattr(values, "to_dict"):
+            return values.to_dict()
+        return values
 
 # -------------------------------------------------------
 
 @dataclass
-class Text:
+class Text(InlineNode):
     content: str = ""
 
 @dataclass
-class Strong:
-    inline_children: list[InlineNode] = field(default_factory=list)
+class Strong(InlineNode):
+    pass
 
 @dataclass
-class Italic:
-    inline_children: list[InlineNode] = field(default_factory=list)
+class Italic(InlineNode):
+    pass
 
 @dataclass
-class Strike:
-    inline_children: list[InlineNode] = field(default_factory=list)
+class Strike(InlineNode):
+    pass
 
 @dataclass
-class Underline:
-    inline_children: list[InlineNode] = field(default_factory=list)
+class Underline(InlineNode):
+    pass
 
 @dataclass
-class InlineMath:
-    content: str = ""
+class InlineMath(InlineNode):
+    pass
 
 @dataclass
-class InlineCode:
-    content: str = ""
+class InlineCode(InlineNode):
+    pass
 
 @dataclass
-class Link:
+class Link(InlineNode):
     url: str = ""
     title: str = ""
-    inline_children: list[InlineNode] = field(default_factory=list)
 
 @dataclass
-class Image:
-    alt: str = ""
+class Image(InlineNode):
     src: str = ""
     title: str = ""
 
+ALL_INLINE_NODES = {Text, Strong, Italic, Strike, Underline, Image, Link, InlineMath, InlineCode}

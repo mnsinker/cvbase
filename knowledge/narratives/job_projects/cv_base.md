@@ -921,6 +921,8 @@ Key Discovery
 
 
 # Appendix 
+excluded visibility: true
+
 Markown 
 
 Block Nodes
@@ -928,13 +930,15 @@ Block Nodes
 - Paragraph
 - Bullet
 - Ordered List
-- Block Quote
+- Quote Block (todo)
 - Code Fence
 - Front Matter
-- Table
+- Table (todo)
 - Horizontal Rule
 - HTML Block
 - Math Block
+- Reference Link (todo)
+- Wiki Link (todo)
 
 Inline Nodes
 - Strong
@@ -942,43 +946,8 @@ Inline Nodes
 - Inline Code
 - Link
 - Image
-- Emoji（以后）
-- Footnote（以后）
-
-
-Block Parser: Which lines belong together?
-
-![img.png](img.png)
-
-NORMAL
-├── Fence Start
-├── Front Matter Start
-├── Table Row
-└── Normal Line
-
-
-CODE_BLOCK
-├── Fence End
-└── Continue
-
-FRONT_MATTER
-├── Delimiter
-└── Continue
-
-> # heading1
->
-> some text 
->
-> - some bullet 1 
-> - some bullet 2 
-
-
-
-这是 inline $G{\mu\nu} + \Lambda g{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$  可是后面还有内容. 
-
-```math
-G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}
-```
+- Emoji（todo）
+- Footnote（todo）
 
 
 

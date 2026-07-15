@@ -1,0 +1,3622 @@
+{
+    "type": "Document",
+    "annotations": [],
+    "inline_children": [],
+    "doc_children": [
+        {
+            "type": "FrontMatter",
+            "annotations": [],
+            "inline_children": [],
+            "doc_children": [],
+            "content": [
+                "id: question_forge",
+                "experience_fk:",
+                "start:",
+                "end:"
+            ]
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Problem Space"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Current Problem"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Educational Content Is Trapped Inside Documents"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Teachers and learning systems rely on questions stored inside PDFs and images."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Those questions are visible to humans but difficult for machines to locate, parse, audit, and reuse."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Existing approaches are insufficient because OCR alone can localize text but struggles with mathematical meaning, while VLM-only extraction can understand content but produces unreliable localization."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Question Forge converts educational documents into structured question assets that can be inspected, evaluated, and exported."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Future Problem"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Question Assets Are Not Enough"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Structured questions solve content extraction, but learning systems also need to decide what should happen next."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Future users need systems that can represent:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student State"
+                                                }
+                                            ],
+                                            "doc_children": [
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "Learning Goal"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "+"
+                                                },
+                                                {
+                                                    "type": "ListItem",
+                                                    "annotations": [],
+                                                    "inline_children": [
+                                                        {
+                                                            "type": "Text",
+                                                            "inline_children": [],
+                                                            "content": "Question Repository"
+                                                        }
+                                                    ],
+                                                    "doc_children": [],
+                                                    "label": "+"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "---------------------"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "= Next Best Learning Action"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Question Forge is evolving toward AI-native educational systems that connect content understanding, learning context, and decision making."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Capabilities"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Current Capabilities"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Structured Question Generation"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the system can do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Convert educational documents into structured, machine-readable question objects."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "PDF or Image → Question Object"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Includes:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "question ownership"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "diagram extraction"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "structured parsing"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "export"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Questions can be reused by downstream learning, review, and generation systems instead of remaining locked inside documents."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Extraction Observability"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the system can do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Make extraction pipelines inspectable and measurable."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Pipeline Stage → Audit Artifact → Metrics → Evaluation"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Includes:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "previews"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "traces"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "cost tracking"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "latency tracking"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "debugging workflows"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Extraction quality can be reviewed, measured, and improved instead of treated as a black box."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Relationship Modeling"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the system can do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Represent entities and relationships explicitly."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Node → Relationship → Node"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Current domain:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Repository Graph"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Future domains:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student Graph"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Knowledge Graph"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Organizational Graph"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Ownership, dependency, and learning relationships can be modeled directly instead of inferred from unstructured content."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Future Capabilities"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Educational Knowledge Representation"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the future system will be able to do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Represent relationships between questions, knowledge points, concepts, and curriculum structures."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Question → Knowledge Point → Concept → Curriculum"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Questions can become part of a navigable educational knowledge system."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Learning Context Representation"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the future system will be able to do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Represent student learning state and historical performance."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student → Attempts → Performance → Learning State"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Learning decisions can be grounded in student context rather than isolated question metadata."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Educational Decision Support"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the future system will be able to do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Recommend the next best learning action from structured content and learning context."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student State + Learning Goal + Question Repository → Next Best Learning Action"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "The system can move from content extraction toward adaptive educational decision making."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Context Compression"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "What the future system will be able to do:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Compress large histories into context that an LLM or decision system can use."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Supports:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student Learning History → Compressed Learning Context"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Why it matters:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Long-term learning history can influence decisions without overwhelming the reasoning system."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Architecture"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Architectural Goal"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Build a foundation that can evolve from:"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Document → Question Object"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "toward:"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Question + Student Context + Learning Goal → Next Best Learning Action"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "The current architecture focuses on educational content understanding. The future architecture expands that foundation into context-aware learning systems."
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Dynamic Flow"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "PDF or Image"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ OCR Detection"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ OCR Recognition"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Question Detection"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Question Crop"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ VLM Parsing"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Question Object"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "→ Export"
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Static Structure"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Document Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Ingest educational documents and normalize them into processable page or image representations."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "PDF ingestion, image normalization, document representation"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Localization Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Locate text regions, question boundaries, and diagram regions."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "OCR Detection, Question Detection, Diagram Detection"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Semantic Extraction Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Convert localized content into structured educational meaning."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "VLM Parsing, Question Object Generation"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Observability Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Make extraction behavior visible, measurable, and debuggable."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Audit Artifacts, Preview Generation, Metrics, Cost Tracking, Latency Tracking"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Relationship Layer"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Represent ownership, dependency, and domain relationships."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Entity Registry, Dependency Mapping, Graph Runtime"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Layer (Future)"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Responsibilities:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Select learning actions from student context, learning goals, and available question assets."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Core components:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Student State, Learning Goal, Question Repository, Next Best Action"
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "Stories"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Core Discovery"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Model Boundaries Before Understanding"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "The recurring architectural discovery was that extraction quality depends on explicit boundaries:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "tool boundaries between localization and semantic understanding"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "ownership boundaries between questions and diagrams"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "domain boundaries between content, context, goals, and decisions"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "information-modeling",
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "automation",
+                                "ai-systems"
+                            ]
+                        },
+                        {
+                            "key": "excluded_visibility",
+                            "values": true
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: OCR Extraction — Separate Localization From Understanding"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "OCR was expected to power the extraction pipeline end to end."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "question ownership across pages remained difficult to resolve"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "mathematical notation could not be reliably converted into structured expressions"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "recognition costs increased even when the system only needed location"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "recognition latency slowed the pipeline"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Localization and understanding are different concerns."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "OCR Detection can answer where content is."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "OCR Recognition should be used only when recognized text is required."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "OCR became primarily a localization capability."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "resolve many ownership problems through coordinates"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "avoid recognition cost when localization is sufficient"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "reduce latency in stages that do not require full text recognition"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "create a foundation for hybrid extraction"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "information-modeling",
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "ai-systems"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: VLM Extraction — Assign Tools By Capability Boundary"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "VLMs were tested as a replacement for localization and semantic extraction."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "full-page understanding was inconsistent"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "generated bounding boxes were difficult to trust"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "question localization remained unstable"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "diagram localization could not be governed reliably"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "VLMs are stronger at semantic understanding than deterministic localization."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Tool selection should follow capability boundaries rather than preference for one model family."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "VLMs became responsible for semantic extraction."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        },
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Localization responsibilities moved to more deterministic stages."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "preserve VLM strengths for question meaning and structure"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "improve trust in location-sensitive outputs"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "make extraction behavior easier to audit"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "information-modeling",
+                                "workflow"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "automation",
+                                "ai-systems"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Diagram Ownership — Model Relationships Before Cropping"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Diagram extraction was treated as a standalone detection problem."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "diagrams could be detected without clear question ownership"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "crops could be correct locally but ambiguous in the question object"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "downstream outputs could not reliably attach diagrams to the right question"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Diagram ownership is not only a diagram problem."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Ownership originates from question boundaries and relationships between extracted entities."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "Diagram extraction became part of relationship modeling between questions and owned assets."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "attach diagrams to the correct question"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "evaluate extraction quality at the question-object level"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "reduce ambiguity in exported assets"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "HorizontalRule",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        }
+                    ],
+                    "level": 2
+                },
+                {
+                    "type": "Heading",
+                    "annotations": [
+                        {
+                            "key": "career_spine",
+                            "values": [
+                                "information-modeling",
+                                "systems"
+                            ]
+                        },
+                        {
+                            "key": "advanced_themes",
+                            "values": [
+                                "ai-systems"
+                            ]
+                        }
+                    ],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Story: Learning Direction — Move From Question Objects To Decisions"
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Problem"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Before:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "The project focused on producing structured question assets."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Consequences:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "extracted questions did not explain what a student should do next"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "learning history was not represented as decision context"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "learning goals were not connected to available questions"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Discovery"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Question structure is a foundation, not the final decision."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                },
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Learning systems require explicit representations of state, goals, options, and feedback."
+                                        }
+                                    ],
+                                    "doc_children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Outcome"
+                                }
+                            ],
+                            "doc_children": []
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "After:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "Paragraph",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "The project direction expanded from content extraction toward educational decision support."
+                                                }
+                                            ],
+                                            "doc_children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Paragraph",
+                            "annotations": [],
+                            "inline_children": [],
+                            "doc_children": [
+                                {
+                                    "type": "Paragraph",
+                                    "annotations": [],
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Benefits:"
+                                        }
+                                    ],
+                                    "doc_children": [
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "connect questions to learning goals"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "use student state as decision context"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        },
+                                        {
+                                            "type": "ListItem",
+                                            "annotations": [],
+                                            "inline_children": [
+                                                {
+                                                    "type": "Text",
+                                                    "inline_children": [],
+                                                    "content": "prepare the architecture for next-best-action recommendations"
+                                                }
+                                            ],
+                                            "doc_children": [],
+                                            "label": "-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 2
+                }
+            ],
+            "level": 1
+        }
+    ]
+}

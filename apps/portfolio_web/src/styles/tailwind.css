@@ -1,8 +1,8 @@
 @import 'tailwindcss';
-@import 'prism.css' layer(components);
+@import './prism.css' layer(components);
 
 @plugin '@tailwindcss/typography';
-@config '../../typography.ts';
+@config '../../typographyForDoc.ts';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -33,4 +33,48 @@
   --text-8xl--line-height: 1;
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
+}
+
+.prose .doc-node > .group {
+  margin-left: 1.5rem;
+}
+
+/* A Heading remains the ownership parent, but its direct content is not indented. */
+.prose
+  .doc-node:has(> h1, > h2, > h3, > h4, > h5, > h6)
+  > .group {
+  margin-left: 0;
+}
+
+/* Remove inherited vertical layout from the group containers. */
+.prose .group,
+.prose .group-items {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Larger spacing only between separate visual groups. */
+.prose .group + .group {
+  margin-top: 0.8rem;
+}
+
+/* Compact spacing between nodes inside the same group. */
+.prose .group-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/*
+Reset Spotlight's paragraph/list vertical margins only inside the
+Document Runtime group layout. The group container now controls spacing.
+*/
+.prose .group-items > .doc-node {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose .group-items > .doc-node > p {
+  margin-top: 0;
+  margin-bottom: 0;
 }

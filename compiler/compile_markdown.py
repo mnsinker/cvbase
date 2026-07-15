@@ -1,17 +1,18 @@
-from compiler.engine.build_node_tree import build_node_tree
-from compiler.engine.parse_lines import parse_lines
-from compiler.entities.node import Node
-from compiler.entities.semantic_registry import SemanticRegistry
-from compiler.transforms.annotate_semantic_types import annotate_semantic_types
-from compiler.transforms.rewrite_semantic_nodes import rewrite_semantic_nodes
+from compiler.engine.line_parser import parse_lines
+from compiler.engine.node_builder import build_parsed_nodes
+from compiler.engine.tree_builder import build_tree
+from compiler.entities.annotation_config import AnnotationConfig
+from compiler.entities.doc_nodes import Document
+from compiler.annotations.annotation_pass import annotation_pass
 
 
-def compile_markdown(markdown: str, registry: SemanticRegistry | None = None) -> list[Node]:
+def compile_markdown(markdown: str, annotation_configs: list[AnnotationConfig]|None = None) -> Document:
 
-    roots = build_node_tree(parse_lines(markdown))
+    parsed_lines = parse_lines(markdown)
+    parsed_nodes = build_parsed_nodes(parsed_lines)
+    document = build_tree(parsed_nodes)
 
-    if registry:
-        annotate_semantic_types(roots, registry)
-        rewrite_semantic_nodes(roots)
+    if annotation_configs:
+        document = annotation_pass(document)
 
-    return roots
+    return document

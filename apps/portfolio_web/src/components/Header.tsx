@@ -6,7 +6,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 
-import { useLocale } from '@/lib/locale-context'
+import {
+  defaultLocale,
+  isLocale,
+  localizePath,
+  switchLocalePath,
+  type Locale,
+} from '@/i18n'
 import {
   Popover,
   PopoverButton,
@@ -96,10 +102,11 @@ function MobileNavItem({
 }
 
 function MobileNavigation(
-  props: React.ComponentPropsWithoutRef<typeof Popover>,
+  props: React.ComponentPropsWithoutRef<typeof Popover> & { locale: Locale },
 ) {
+  let { locale, ...popoverProps } = props
   return (
-    <Popover {...props}>
+    <Popover {...popoverProps}>
       <PopoverButton className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
@@ -123,11 +130,8 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
-            <MobileNavItem href="/articles">Articles</MobileNavItem>
-            <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-            <MobileNavItem href="/uses">Uses</MobileNavItem>
+            <MobileNavItem href={localizePath('/', locale)}>About</MobileNavItem>
+            <MobileNavItem href={localizePath('/projects', locale)}>Projects</MobileNavItem>
           </ul>
         </nav>
       </PopoverPanel>
@@ -142,7 +146,10 @@ function NavItem({
   href: string
   children: React.ReactNode
 }) {
-  let isActive = usePathname() === href
+  let pathname = usePathname()
+  let isActive =
+    pathname === href ||
+    (href !== '/en' && href !== '/zh' && pathname.startsWith(`${href}/`))
 
   return (
     <li>
@@ -164,28 +171,28 @@ function NavItem({
   )
 }
 
-function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
+function DesktopNavigation(
+  props: React.ComponentPropsWithoutRef<'nav'> & { locale: Locale },
+) {
+  let { locale, ...navProps } = props
   return (
-    <nav {...props}>
+    <nav {...navProps}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        <NavItem href={localizePath('/', locale)}>
+          About
+        </NavItem>
+        <NavItem href={localizePath('/projects', locale)}>Projects</NavItem>
       </ul>
     </nav>
   )
 }
 
-function LocaleToggle() {
-  let { locale, setLocale } = useLocale()
+function LocaleToggle({ locale, pathname }: { locale: Locale; pathname: string }) {
 
   return (
     <div className="flex items-center gap-1 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-      <button
-        type="button"
-        onClick={() => setLocale('en')}
+      <Link
+        href={switchLocalePath(pathname, 'en')}
         className={
           locale === 'en'
             ? 'text-teal-500 dark:text-teal-400'
@@ -193,11 +200,10 @@ function LocaleToggle() {
         }
       >
         EN
-      </button>
+      </Link>
       <span className="text-zinc-300 dark:text-zinc-600">|</span>
-      <button
-        type="button"
-        onClick={() => setLocale('zh')}
+      <Link
+        href={switchLocalePath(pathname, 'zh')}
         className={
           locale === 'zh'
             ? 'text-teal-500 dark:text-teal-400'
@@ -205,7 +211,7 @@ function LocaleToggle() {
         }
       >
         中文
-      </button>
+      </Link>
     </div>
   )
 }
@@ -283,7 +289,10 @@ function Avatar({
 }
 
 export function Header() {
-  let isHomePage = usePathname() === '/'
+  let pathname = usePathname()
+  let localeSegment = pathname.split('/')[1]
+  let locale: Locale = isLocale(localeSegment) ? localeSegment : defaultLocale
+  let isHomePage = pathname === '/' || pathname === `/${locale}`
 
   let headerRef = useRef<React.ElementRef<'div'>>(null)
   let avatarRef = useRef<React.ElementRef<'div'>>(null)
@@ -460,12 +469,12 @@ export function Header() {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
+                <MobileNavigation locale={locale} className="pointer-events-auto md:hidden" />
+                <DesktopNavigation locale={locale} className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto flex items-center gap-3">
-                  <LocaleToggle />
+                  <LocaleToggle locale={locale} pathname={pathname} />
                   <ThemeToggle />
                 </div>
               </div>

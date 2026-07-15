@@ -1,6 +1,10 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { defaultLocale, isLocale, localizePath, type Locale } from '@/i18n'
 
 function NavLink({
   href,
@@ -20,6 +24,10 @@ function NavLink({
 }
 
 export function Footer() {
+  let pathname = usePathname()
+  let localeSegment = pathname.split('/')[1]
+  let locale: Locale = isLocale(localeSegment) ? localeSegment : defaultLocale
+
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -27,13 +35,11 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href={localizePath('/', locale)}>About</NavLink>
+                <NavLink href={localizePath('/projects', locale)}>Projects</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Jieni Zhang. All rights
                 reserved.
               </p>
             </div>

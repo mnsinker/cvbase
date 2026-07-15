@@ -4,8 +4,8 @@ import nextMDX from '@next/mdx'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   outputFileTracingIncludes: {
-    '/articles/*': ['./src/app/articles/**/*.mdx'],
-    '/projects/*': ['./src/app/projects/**/*.mdx'],
+    '/articles/*': ['./content/articles/**/*.mdx'],
+    '/projects/*': ['./content/projects/**/*.mdx'],
   },
 }
 

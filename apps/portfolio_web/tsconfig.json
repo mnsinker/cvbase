@@ -31,6 +31,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "../../domains/portfolio/node_modules"
+    "../../domains/ss_portfolio/node_modules"
   ]
 }

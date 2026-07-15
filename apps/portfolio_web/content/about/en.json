@@ -1,0 +1,841 @@
+{
+    "type": "Document",
+    "annotations": [],
+    "inline_children": [],
+    "doc_children": [
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐  Why Product → Engineering?"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "I wanted to own the entire solution."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Not just defining the problem, but taking responsibility for the entire journey — from problem definition to architecture, implementation, and delivery."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Understand the problem."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Design the system."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Build the solution."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Deliver the outcome."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Engineering gave me the ability to close that loop."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐  What does my product background bring to Engineering?"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "10 years of building products as product manager taught me 3 capabilities."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Define the Right Problem"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Why it matters: Without a clearly defined problem, success cannot be measured."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Without it: Evaluation becomes subjective, scope continues to grow, and projects become difficult to close."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Design for Change"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Why it matters: Business requirements never stop evolving."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Without it: Every new requirement increases delivery time, maintenance cost, and architectural complexity."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Create Shared Understanding"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Why it matters: Different teams have different perspectives and goals. A successful solution requires a shared understanding before implementation begins."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Without it: Teams solve different problems, decisions become inconsistent, and the final solution is difficult for everyone to support."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐  What Have I Built?"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "I didn't start with a long-term roadmap."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "I started by solving actual problems at hand."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Only later did I realize they were part of a larger system."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Engine"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Problem"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": Business decisions were difficult to explain, validate, and maintain."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Built"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": A policy-driven decision engine where every reasoning step is explicit and traceable."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Uncovered"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": Reliable decisions depend on structured knowledge."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Question Forge"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Problem"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": Educational content was locked inside PDF documents."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Built"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": An AI workflow that converts PDFs into structured Question Objects."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Uncovered"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": AI-generated code quickly became difficult to maintain. That led me to explore AI Coding Governance."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "CV Base + Compiler"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Problem"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": Every resume update meant rewriting the same experience again."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Built"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": A narrative-based knowledge system where resumes and portfolios come from the same source."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "Uncovered"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": ": Rendering documents without losing hierarchy required a "
+                                },
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "compiler"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "."
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐  Where Am I Going?"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "I'm interested in one question:"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "InlineCode",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "How do people, organizations, and AI systems learn?"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "Although they operate in different environments, they all follow the same learning loop."
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "CodeBlock",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [],
+                    "language": "text",
+                    "content": [
+                        "Knowledge",
+                        "↓",
+                        "Decision",
+                        "↓",
+                        "Action",
+                        "↓",
+                        "Feedback",
+                        "↓",
+                        "Learning"
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "My long-term goal is to build systems that make this loop easier to understand, improve, and scale"
+                        }
+                    ],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        }
+    ]
+}

@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 
-import { LocaleProvider } from '@/lib/locale-context'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
@@ -30,11 +29,9 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
-          <LocaleProvider>
-            <div className="flex w-full">
-              <Layout>{children}</Layout>
-            </div>
-          </LocaleProvider>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
+          </div>
         </Providers>
       </body>
     </html>

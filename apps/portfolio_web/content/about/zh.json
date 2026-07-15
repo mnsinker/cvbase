@@ -1,0 +1,841 @@
+{
+    "type": "Document",
+    "annotations": [],
+    "inline_children": [],
+    "doc_children": [
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐ 为什么产品转 → 研发？"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "我想对完整的解决方案负责。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "不只是定义问题，而是对整个过程负责——从问题定义，到架构设计、实现与交付。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "理解问题"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "设计系统"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "构建解决方案"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "交付结果"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "研发让我拥有了闭环的能力。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐ 我的产品背景能为研发带来什么？"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "十年的产品经理经历让我积累了三种能力。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "定义正确的问题"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "为什么重要：如果问题没有被清晰定义，就无法衡量成功。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "缺少它会怎样：评估会变得主观，范围会不断扩大，项目也会难以收尾。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "为变化而设计"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "为什么重要：业务需求永远在不断演变。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "缺少它会怎样：每一项新需求都会增加交付时间、维护成本和架构复杂度。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "建立共识"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "为什么重要：不同团队有不同的视角和目标。一个成功的解决方案，需要在开始实现之前建立跨团队的共识。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "缺少它会怎样：团队会解决不同的问题，决策会变得不一致，最终的解决方案也很难让不同团队所拥护。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐ 我构建过什么？"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "我并不是从一份宏伟的路线图开始的。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "我从解决眼前真实的问题开始。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "直到后来，才意识到它们其实属于一个更大的系统。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Decision Engine"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "问题"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：业务决策难以解释、验证和维护。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "构建"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：一个由策略驱动的决策引擎，让每一步推理都清晰明确且可追溯。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "发现"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：可靠的决策依赖结构化的知识。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "Question Forge"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "问题"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：教育内容被锁在 PDF 文档中。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "构建"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：一套将 PDF 转换为结构化 Question Object 的 AI 工作流。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "发现"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：AI 生成的代码很快就会变得难以维护。这促使我开始探索 AI Coding Governance。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Strong",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "CV Base + Compiler"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": [
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "问题"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：每次更新简历，都意味着要重复改写相同的经历。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "构建"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：一个基于叙事的知识系统，让简历和作品集来自同一个源头。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        },
+                        {
+                            "type": "ListItem",
+                            "annotations": [],
+                            "inline_children": [
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "发现"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "：在渲染文档时要保留并体现信息层级结构，需要一个"
+                                },
+                                {
+                                    "type": "Strong",
+                                    "inline_children": [
+                                        {
+                                            "type": "Text",
+                                            "inline_children": [],
+                                            "content": "编译器"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "。"
+                                }
+                            ],
+                            "doc_children": [],
+                            "label": "-"
+                        }
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        },
+        {
+            "type": "Heading",
+            "annotations": [],
+            "inline_children": [
+                {
+                    "type": "Text",
+                    "inline_children": [],
+                    "content": "⚐ 我将走向哪里？"
+                }
+            ],
+            "doc_children": [
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "我对一个问题感兴趣："
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "InlineCode",
+                            "inline_children": [
+                                {
+                                    "type": "Text",
+                                    "inline_children": [],
+                                    "content": "人、组织和 AI 系统是如何学习的？"
+                                }
+                            ]
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "尽管它们运行在不同的环境中，但都遵循同一个学习循环。"
+                        }
+                    ],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "CodeBlock",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": [],
+                    "language": "text",
+                    "content": [
+                        "知识",
+                        "↓",
+                        "决策",
+                        "↓",
+                        "行动",
+                        "↓",
+                        "反馈",
+                        "↓",
+                        "学习"
+                    ]
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [],
+                    "doc_children": []
+                },
+                {
+                    "type": "Paragraph",
+                    "annotations": [],
+                    "inline_children": [
+                        {
+                            "type": "Text",
+                            "inline_children": [],
+                            "content": "我的长期目标，是构建能够让这个循环更容易被理解、改进和规模化的系统。"
+                        }
+                    ],
+                    "doc_children": []
+                }
+            ],
+            "level": 1
+        }
+    ]
+}
