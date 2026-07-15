@@ -6,16 +6,24 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mnsink-portfolio.vercel.app'),
   title: {
-    template: '%s - Spencer Sharp',
-    default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+    template: '%s | Jieni Zhang',
+    default: 'Jieni Zhang | Applied AI Engineer',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'Applied AI Engineer building systems that turn knowledge into decisions, actions, and continuous learning.',
+  openGraph: {
+    title: 'Jieni Zhang | Applied AI Engineer',
+    description:
+      'Applied AI Engineer building systems that turn knowledge into decisions, actions, and continuous learning.',
+    url: '/',
+    siteName: 'Jieni Zhang',
+    type: 'website',
+  },
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': '/feed.xml',
     },
   },
 }

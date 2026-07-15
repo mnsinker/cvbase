@@ -1,5 +1,3 @@
-import { type Metadata } from 'next'
-
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -38,12 +36,6 @@ function Appearance({
       <Card.Cta>{cta}</Card.Cta>
     </Card>
   )
-}
-
-export const metadata: Metadata = {
-  title: 'Speaking',
-  description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
 }
 
 export default function Speaking() {
