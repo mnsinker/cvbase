@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation'
 
+import { articleLoaders } from '@/lib/articles'
+
 type ArticlePageProps = {
   params: Promise<{
     locale: string
@@ -9,14 +11,12 @@ type ArticlePageProps = {
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params
-  let article
-
-  try {
-    article = await import(`../../../../content/articles/${slug}/page.mdx`)
-  } catch {
+  const loader = articleLoaders[slug as keyof typeof articleLoaders]
+  if (!loader) {
     notFound()
   }
 
+  const article = await loader()
   const Article = article.default
   return <Article />
 }

@@ -1,6 +1,8 @@
+type ThemeResolver = (path: string, defaultValue?: unknown) => any
+
 export default {
   theme: {
-    typography: ({ theme }) => ({
+    typography: ({ theme }: { theme: ThemeResolver }) => ({
       invert: {
         css: {
           '--tw-prose-body': 'var(--tw-prose-invert-body)',
@@ -313,4 +315,3 @@ export default {
     }),
   },
 }
-

@@ -1,5 +1,3 @@
-import glob from 'fast-glob'
-
 interface Article {
   title: string
   description: string
@@ -11,26 +9,35 @@ export interface ArticleWithSlug extends Article {
   slug: string
 }
 
+export const articleLoaders = {
+  'crafting-a-design-system-for-a-multiplanetary-future': () =>
+    import(
+      '../../content/articles/crafting-a-design-system-for-a-multiplanetary-future/page.mdx'
+    ),
+  'introducing-animaginary': () =>
+    import('../../content/articles/introducing-animaginary/page.mdx'),
+  'rewriting-the-cosmos-kernel-in-rust': () =>
+    import('../../content/articles/rewriting-the-cosmos-kernel-in-rust/page.mdx'),
+} as const
+
 async function importArticle(
-  articleFilename: string,
+  slug: keyof typeof articleLoaders,
 ): Promise<ArticleWithSlug> {
-  let { article } = (await import(`../../content/articles/${articleFilename}`)) as {
+  const articleModule = (await articleLoaders[slug]()) as {
     default: React.ComponentType
     article: Article
   }
+  const { article } = articleModule
 
-  return {
-    slug: articleFilename.replace(/(\/page)?\.mdx$/, ''),
-    ...article,
-  }
+  return { slug, ...article }
 }
 
 export async function getAllArticles() {
-  let articleFilenames = await glob('*/page.mdx', {
-    cwd: './content/articles',
-  })
-
-  let articles = await Promise.all(articleFilenames.map(importArticle))
+  const articles = await Promise.all(
+    Object.keys(articleLoaders).map((slug) =>
+      importArticle(slug as keyof typeof articleLoaders),
+    ),
+  )
 
   return articles.sort((a, z) => +new Date(z.date) - +new Date(a.date))
 }
