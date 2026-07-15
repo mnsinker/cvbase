@@ -66,7 +66,7 @@ export const aboutContent: Record<I18n, AboutContent> = {
     },
     contact: {
       title: 'Let’s Talk',
-      description: "Interested in working together? Let's Talk",
+      description: "Interested in working together? Let's Talk.",
       button: 'Connect on WeChat',
     },
   },

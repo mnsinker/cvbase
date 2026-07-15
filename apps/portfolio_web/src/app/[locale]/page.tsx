@@ -7,6 +7,7 @@ import path from 'node:path'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import JsonDocumentRenderer from '@/components/renderer/JsonDocumentRenderer'
+import { WeChatQrButton } from '@/components/WeChatQrButton'
 import { aboutContent } from '../../../content/about/content'
 import {
   GitHubIcon,
@@ -15,7 +16,6 @@ import {
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
-import wechatQrCode from '@/images/wechat_qrcode.jpg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -75,20 +75,7 @@ function Newsletter({ content }: { content: (typeof aboutContent)[Locale] }) {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         {content.contact.description}
       </p>
-      <div className="group relative mt-6">
-        <Button type="button" variant="secondary" className="w-full">
-          {content.contact.button}
-        </Button>
-        <div className="pointer-events-none absolute right-0 bottom-full z-20 mb-3 hidden rounded-2xl border border-zinc-200 bg-white p-3 shadow-xl group-hover:block group-focus-within:block dark:border-zinc-700 dark:bg-zinc-800">
-          <Image
-            src={wechatQrCode}
-            alt=""
-            width={180}
-            height={180}
-            className="h-44 w-44 rounded-lg object-cover"
-          />
-        </div>
-      </div>
+      <WeChatQrButton>{content.contact.button}</WeChatQrButton>
     </div>
   )
 }
