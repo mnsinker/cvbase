@@ -12,8 +12,7 @@ Contact Information
 
 Summary
 
-    3 years of Omnichannel OMS backend system experience with multiple projects on new retail applications, including SFS (ship from store), Wechat Work mini program for store staff, Return in Store.
-    6 years of to B SaaS product & project experience in hotel and cosmetic industries. Redesigned the user experience for all-in-one resource management system that integrated with booking, inventory, resource, order, fulfillment and reporting modules.
+    Applied AI Engineer specializing in LLM workflows, multimodal document AI, and decision systems.
 
 Education
 
@@ -26,7 +25,32 @@ Education
 
 Skills
 
-    Technical Knowledge: Python, Java, JavaSript, SQL, Numpy, Pandas, Kibana
+    AI & Agents
+        LLM
+        Prompt Engineering
+        Tool Calling
+        Context Management
+        Workflow Orchestration
+        Evaluation
+    Document AI
+        OCR
+        VLM
+        Information Extraction
+        Structured Outputs
+        Document Understanding
+    ML
+        PyTorch
+        CNN
+        Embeddings
+        Model Training, Fine Tuning
+        Evaluation
+    Engineering
+        Python
+        FastAPI 
+        Pydantic
+        Docker
+        SQL
+        Git
 
 Certifications
 
