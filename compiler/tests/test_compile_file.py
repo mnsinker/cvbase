@@ -1,4 +1,4 @@
-from compiler.compile_file import compile_file
+from compiler.api.compile import compile_file
 from compiler.entities.doc_nodes import Heading
 from compiler.entities.inline_nodes import Text
 

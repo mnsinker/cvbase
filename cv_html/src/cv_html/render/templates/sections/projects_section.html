@@ -1,0 +1,15 @@
+{% if cv.projects | selectattr("show_project") | list %}
+<section class="cv-section projects-section">
+
+    <div class="section-title">
+        {{ translations.sections.projects }}
+    </div>
+
+    {% for project in cv.projects %}
+    {% if project.show_project %}
+        {% include "components/project_card.html" %}
+    {% endif %}
+    {% endfor %}
+
+</section>
+{% endif %}

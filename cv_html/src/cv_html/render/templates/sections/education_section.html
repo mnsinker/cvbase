@@ -1,0 +1,10 @@
+<section class="cv-section education-section">
+    <div class="section-title">
+        {{ translations.sections.education }}
+    </div>
+
+    {% for education in cv.educations %}
+        {% set education_date_range = education_date_ranges[loop.index0] %}
+        {% include "components/education_card.html" %}
+    {% endfor %}
+</section>

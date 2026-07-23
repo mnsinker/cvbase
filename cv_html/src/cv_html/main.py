@@ -1,71 +1,36 @@
-from __future__ import annotations
+import subprocess
 from pathlib import Path
+from compiler.entities.annotation_config import AnnotationConfig
+from config.annotation_configs import CV_ANNOTATIONS
+from cv_html.parser.cv_parser import parse_cv
+from cv_html.render.renderer import render_cv
 
-if __name__ == "__main__" and __package__ is None:
-    __import__("sys").path.insert(0, str(Path(__file__).resolve().parent.parent))
-
-from cv_html.builder.build_sections import build_sections
-from cv_html.render.render_header_section import render_header_section
-from cv_html.render.render_summary_section import render_summary_section
-from cv_html.render.render_projects_section import render_projects_section
-from cv_html.render.render_experiences_section import render_experiences_section
-from cv_html.render.render_earlier_experiences_section import render_earlier_experiences_section
-from cv_html.render.render_education_section import render_education_section
-
-
-PACKAGE_DIR = Path(__file__).resolve().parent
-PROJECT_DIR = PACKAGE_DIR.parent.parent
-
-TEMPLATES_DIR = PACKAGE_DIR / "templates"
-OUTPUT_DIR = PROJECT_DIR / "output"
-
-
-def main(markdown_path: str) -> None:
-
-    markdown_path = Path(markdown_path)
-    markdown = (markdown_path.read_text(encoding="utf-8"))
-
-    stem = markdown_path.stem
-    if stem.endswith("_zh"):
-        html_lang = "zh-CN"
-    elif stem.endswith("_en"):
-        html_lang = "en"
-    else:
-        raise ValueError(f"Filename must end with _zh or _en: {stem}")
-
-    sections = build_sections(markdown)
-    template = (TEMPLATES_DIR / "cv.html").read_text(encoding="utf-8")
-    styles = (TEMPLATES_DIR / "cv.css").read_text(encoding="utf-8")
-
-    header_html = (
-        render_header_section(sections.profile)
-    )
-
-    summary_html = render_summary_section(sections.summary, html_lang)
-    projects_html = render_projects_section(sections.projects, html_lang)
-    experiences_html = render_experiences_section(sections.experiences, html_lang)
-    earlier_experiences_html = render_earlier_experiences_section(sections.earlier_experiences, html_lang)
-    education_html = render_education_section(sections.education, html_lang)
-
-    html = (
-        template
-        .replace("{{styles}}", styles)
-        .replace("{{html_lang}}", html_lang)
-        .replace("{{header}}", header_html)
-        .replace("{{summary}}", summary_html)
-        .replace("{{projects}}",projects_html)
-        .replace("{{experiences}}", experiences_html)
-        .replace("{{earlier_experiences}}", earlier_experiences_html)
-        .replace("{{education}}", education_html)
-    )
-
-    output_path = (OUTPUT_DIR/ f"{stem}.html")
+OUTPUT_DIR = Path(__file__).parents[2] / "output"
+def _write_output(html: str, language: str) -> Path:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(html, encoding="utf-8",)
+    output_path = OUTPUT_DIR / f"cv_{language}.html"
+    output_path.write_text(html, encoding="utf-8")
+    return output_path
 
-    print(f"Saved: {output_path}")
+
+def _open_output(path: str | Path, open_mode) -> None:
+    if open_mode == "finder":
+        subprocess.run(["open", "-R", str(path)], check=False)
+    elif open_mode == "browser":
+        subprocess.run(["open", str(path)], check=False)
 
 
-if __name__ == "__main__":
+def build_cv(
+        folder_path: str,
+        language: str="en",
+        annotation_configs: list[AnnotationConfig]|None = CV_ANNOTATIONS,
+        open_mode: str | None = "finder"
+) -> Path:
+    cv = parse_cv(folder_path, language, annotation_configs)
+    html = render_cv(cv, language=language)
+    output_path = _write_output(html, language)
+    _open_output(output_path, open_mode)
+    return output_path
 
-    main("/Users/mnsink/projects/cv-base/knowledge/products/cv/output_consolidated/cv_ai-fde_260613_view_en.md")
+build_cv("/Users/mnsink/projects/cv-base/knowledge/career", language="en")
+# build_cv("/Users/mnsink/projects/cv-base/knowledge/career", language="zh")

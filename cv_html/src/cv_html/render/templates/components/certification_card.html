@@ -1,0 +1,9 @@
+<div class="certification-card">
+    <div class="certification-header">
+        <span class="certification-name">{{ certification.name }}</span>
+        <span class="certification-issuer">{{ certification.issuer }}</span>
+        {% if certification_context.issue_date %}
+        <span class="certification-date">Issued: {{ certification_context.issue_date }}</span>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% if cv.experiences | selectattr("is_other") | list %}
+
+<section class="cv-section other-experiences-section">
+
+    <div class="section-title">
+        {{ translations.sections.other_experience }}
+    </div>
+
+
+    <ul class="other-experience-list">
+    {% for experience in cv.experiences %}
+    {% if experience.is_other %}
+        {% set experience_context = experience_contexts[loop.index0] %}
+        {% set company = experience.company %}
+        {% set role = experience.role %}
+        {% set date_range = experience_context.date_range %}
+        {% include "components/other_experience_bullet.html" %}
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+
+</section>
+
+{% endif %}

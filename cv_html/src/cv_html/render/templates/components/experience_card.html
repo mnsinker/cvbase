@@ -1,0 +1,30 @@
+<div class="experience-card">
+
+    <div class="experience-timeline">
+        <div class="experience-date-range">{{ experience_context.date_range }}</div>
+        <div class="experience-duration">{{ experience_context.duration }}</div>
+    </div>
+
+    <div class="experience-content">
+        <div class="experience-header">
+            <div class="experience-company">
+                {% if experience.show_department and experience.department %}
+                    {{ experience.company }} - {{ experience.department }}
+                {% else %}
+                    {{ experience.company }}
+                {% endif %}
+            </div>
+            <div class="experience-title">{{ experience.role }}</div>
+        </div>
+
+        <ul class="experience-bullets">
+            {% for bullet in experience.bullets %}
+            <li class="bullet">
+                {{ render_rich_text(bullet) | safe }}
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+</div>

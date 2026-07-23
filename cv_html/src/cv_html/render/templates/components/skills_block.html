@@ -1,0 +1,20 @@
+{% if cv.skills %}
+<div class="skills-block">
+    <div class="section-title skills-title">{{ translations.sections.skills }}</div>
+    <div class="skills-grid">
+        {% for skill in cv.skills %}
+        <div class="skill-category">
+            <div class="skill-category-title">
+                {{ render_icon(get_skill_icon(skill.icon), "skill-category-icon") | safe }}
+                {{ skill.title }}
+            </div>
+            <ul class="skill-list">
+                {% for bullet in skill.bullets %}
+                <li class="bullet">{{ render_rich_text(bullet) | safe }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

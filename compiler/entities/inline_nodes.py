@@ -59,11 +59,9 @@ class InlineCode(InlineNode):
 @dataclass
 class Link(InlineNode):
     url: str = ""
-    title: str = ""
 
 @dataclass
 class Image(InlineNode):
     src: str = ""
-    title: str = ""
 
 ALL_INLINE_NODES = {Text, Strong, Italic, Strike, Underline, Image, Link, InlineMath, InlineCode}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="{{ html_lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        {{ styles }}
+    </style>
+</head>
+
+
+<body>
+<main>
+    <!-- Page 1 -->
+    <article class="page">
+
+        <!-- Profile -->
+        {% include "sections/header_section.html" %}
+        <div class="rule"></div>
+
+        <!-- Summary -->
+        {% include "sections/summary_section.html" %}
+        <div class="rule"></div>
+
+        <!-- Skills -->
+{#        {% include "sections/skills_section.html" %}#}
+{#        <div class="rule"></div>#}
+
+        <!-- Projects -->
+        {% include "sections/projects_section.html" %}
+        <div class="rule"></div>
+
+        <!-- Experience -->
+        {% include "sections/experiences_section.html" %}
+    </article>
+
+
+    <!-- Page 2 -->
+    <article class="page">
+        <!-- Other Experience -->
+        {% include "sections/other_experiences_section.html" %}
+        <div class="rule"></div>
+
+        <!-- Education -->
+        {% include "sections/education_section.html" %}
+        <div class="rule"></div>
+
+        <!-- Certifications -->
+        {% include "sections/certification_section.html" %}
+    </article>
+
+
+</main>
+<script>
+(() => {
+    function getLabelWidth(container) {
+        const children = [...container.children]
+            .filter((child) => !child.hidden);
+
+        const gap = parseFloat(
+            getComputedStyle(container).gap
+        ) || 0;
+
+        return children.reduce(
+            (sum, child) =>
+                sum + child.getBoundingClientRect().width,
+            0
+        ) + gap * Math.max(children.length - 1, 0);
+    }
+
+
+    function updateLabelOverflow(container) {
+
+        const labels = [
+            ...container.querySelectorAll(".overflow-label-tag")
+        ];
+
+        const more = container.querySelector(
+            ".overflow-label-more"
+        );
+
+
+        // reset
+        labels.forEach(label => {
+            label.hidden = false;
+        });
+
+        more.hidden = true;
+
+
+        const header =
+            container.closest(".project-header");
+
+        const links =
+            header?.querySelector(".project-links");
+
+        const containerRect =
+            container.getBoundingClientRect();
+
+        const headerRect =
+            header.getBoundingClientRect();
+
+        const linksRect =
+            links?.getBoundingClientRect();
+
+        const overlapsLinks =
+            linksRect
+            && containerRect.top < linksRect.bottom
+            && containerRect.bottom > linksRect.top;
+
+        const availableRight =
+            overlapsLinks
+                ? linksRect.left
+                : headerRect.right;
+
+        const availableWidth =
+            availableRight - containerRect.left;
+
+
+        function overflow() {
+
+            return getLabelWidth(container)
+                > availableWidth;
+
+        }
+
+
+        // Case 1:
+        // All labels fit.
+        // Keep everything.
+
+        if (!overflow()) {
+            return;
+        }
+
+
+        // Case 2:
+        // Need collapse.
+
+        more.hidden = false;
+
+
+        while (overflow()) {
+
+            const visibleLabels =
+                labels.filter(
+                    label => !label.hidden
+                );
+
+
+            if (visibleLabels.length === 0) {
+                break;
+            }
+
+
+            const last =
+                visibleLabels[visibleLabels.length - 1];
+
+
+            last.hidden = true;
+        }
+    }
+
+
+    requestAnimationFrame(() => {
+
+        document
+            .querySelectorAll(".overflow-labels")
+            .forEach(updateLabelOverflow);
+
+    });
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% if cv.experiences | rejectattr("is_other") | list %}
+<section class="cv-section experiences-section">
+
+    <div class="section-title">
+        {{ translations.sections.experience }}
+    </div>
+
+    {% for experience in cv.experiences %}
+    {% if not experience.is_other %}
+        {% set experience_context = experience_contexts[loop.index0] %}
+        {% include "components/experience_card.html" %}
+    {% endif %}
+    {% endfor %}
+
+</section>
+{% endif %}

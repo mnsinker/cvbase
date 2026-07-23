@@ -1,0 +1,12 @@
+{% if summary_certification_contexts %}
+<div class="summary-footer">
+    <div class="summary-meta summary-certifications">
+        <span class="summary-meta-label">{{ translations.sections.certifications }}:</span>
+        <span class="summary-meta-value">
+            {% for certification_context in summary_certification_contexts %}
+                {{ certification_context.certification.name }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+    </div>
+</div>
+{% endif %}

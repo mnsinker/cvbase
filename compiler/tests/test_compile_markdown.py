@@ -1,4 +1,4 @@
-from compiler.compile_markdown import compile_markdown
+from compiler.api.compile import compile_markdown
 from compiler.entities.annotation_config import AnnotationConfig
 from compiler.entities.doc_nodes import Document, Heading, Paragraph
 from compiler.entities.inline_nodes import Text
@@ -26,11 +26,11 @@ def test_compile_markdown_compiles_heading_and_paragraph_tree():
 
 
 def test_compile_markdown_applies_annotation_pass_when_config_is_supplied():
-    config = AnnotationConfig(key="career_spine", value_format=ValueFormat.LIST)
+    config = [AnnotationConfig(key="career_spine", value_format=ValueFormat.LIST)]
 
-    document = compile_markdown("Career Spine: craft, leadership", annotation_config=config)
+    document = compile_markdown("Career Spine: craft, leadership", annotation_configs=config)
 
     assert document.doc_children == []
     assert len(document.annotations) == 1
     assert document.annotations[0].key == "career_spine"
-    assert document.annotations[0].value == ["craft", "leadership"]
+    assert document.annotations[0].values == ["craft", "leadership"]

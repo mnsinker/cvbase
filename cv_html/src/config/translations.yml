@@ -1,0 +1,23 @@
+en:
+  sections:
+    summary: Summary
+    skills: Skills
+    projects: Projects
+    experience: Experience
+    other_experience: Other Experience
+    education: Education
+    certifications: Certifications
+  labels:
+    desired_positions: Desired Positions
+
+zh:
+  sections:
+    summary: 个人简介
+    skills: 专业技能
+    projects: 项目经验
+    experience: 工作经历
+    other_experience: 其他经历
+    education: 教育经历
+    certifications: 专业证书
+  labels:
+    desired_positions: 目标职位

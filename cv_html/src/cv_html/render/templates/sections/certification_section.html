@@ -1,0 +1,13 @@
+{% set section_certification_contexts = certification_contexts
+    | rejectattr("certification.show_in_header")
+    | list %}
+{% if section_certification_contexts %}
+<section class="cv-section certification-section">
+    <div class="section-title">{{ translations.sections.certifications }}</div>
+
+    {% for certification_context in section_certification_contexts %}
+        {% set certification = certification_context.certification %}
+        {% include "components/certification_card.html" %}
+    {% endfor %}
+</section>
+{% endif %}

@@ -33,10 +33,9 @@ class DocNode:
         return values
 
 # -----------------------------------------------------------------
-
 @dataclass
-class Document(DocNode):
-    pass # inline_children not allowed
+class Document(DocNode):  # inline_children not allowed
+    pass
 
 @dataclass
 class FrontMatter(DocNode): # no inheritance

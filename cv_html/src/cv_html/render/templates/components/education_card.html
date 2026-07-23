@@ -1,0 +1,25 @@
+<div class="education-card">
+
+    <div class="education-header">
+        <span class="education-school">
+            {{ education.school }}
+        </span>
+        <span class="education-degree">
+            {{ education.degree }}
+        </span>
+        {% if education.start_date %}
+        <span class="education-date-range">
+            {{ education_date_range }}
+        </span>
+        {% endif %}
+    </div>
+
+    <ul class="education-bullets">
+        {% for bullet in education.bullets %}
+        <li class="bullet">
+            {{ render_rich_text(bullet) | safe }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>

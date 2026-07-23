@@ -1,4 +1,4 @@
-from compiler.engine.delimiter_processor import scan_delimiters, normalize_delimiters, is_closable
+from compiler.engine.delimiter_processor import scan_delimiters, normalize_delimiters, is_closable, is_opening
 from compiler.entities.delimiter_match import DelimiterMatch
 from compiler.entities.delimiter_run import DelimiterRun
 from compiler.entities.inline_nodes import InlineNode, Text
@@ -44,7 +44,8 @@ def _find_first_inline(remaining: str) -> DelimiterMatch | None:
 
         # 2. deal with opening delimiter: 1st opening delimiter
         if not stack:
-            stack.append(run)
+            if is_opening(run, INLINE_NODE_RULES_BY_OPENING):
+                stack.append(run)
             continue
 
         # 3. deal with closing delimiter: check & match

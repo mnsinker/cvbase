@@ -72,5 +72,11 @@ def normalize_delimiters(runs: list[DelimiterRun], split_rules: dict) -> list[De
 def is_closable(last_run, current_run, rule_map) -> bool:
     opening_token = last_run.delimiter * last_run.count
     rule = rule_map[opening_token]
+    if not rule:
+        return False
     return current_run.delimiter == rule.closing
+
+def is_opening(run:DelimiterRun, rule_map) -> bool:
+    token = run.delimiter * run.count
+    return token in rule_map
 

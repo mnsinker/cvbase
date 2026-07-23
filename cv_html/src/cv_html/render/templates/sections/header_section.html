@@ -1,0 +1,34 @@
+<header class="header">
+    <div>
+        {% if cv.profile.name %}
+        <h1>{{ cv.profile.name }}</h1>
+        {% endif %}
+
+        {% if cv.profile.desired_positions %}
+        <div class="desired-position">{{ translations.labels.desired_positions }}: {{ cv.profile.desired_positions | join(", ") }}</div>
+        {% endif %}
+    </div>
+
+    {% if cv.profile.phone or cv.profile.email or cv.profile.links %}
+    <div class="contact">
+        {% if cv.profile.phone %}
+        <div>{{ cv.profile.phone }}</div>
+        {% endif %}
+
+        {% if cv.profile.email %}
+        <div>{{ cv.profile.email }}</div>
+        {% endif %}
+
+        {% if cv.profile.links %}
+        <div class="profile-links">
+            {% for link in cv.profile.links %}
+            <a class="profile-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                {{ render_icon(get_link_icon(link.title), "project-link-icon") | safe }}
+                <span>{{ link.title }}</span>
+            </a>{% if not loop.last %}<span class="profile-link-separator">|</span>{% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</header>

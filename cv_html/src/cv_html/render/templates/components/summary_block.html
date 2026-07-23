@@ -1,0 +1,9 @@
+<div class="section-title">{{ translations.sections.summary }}</div>
+
+{% if cv.profile.summaries %}
+<div class="summary-intro">
+    {% for summary in cv.profile.summaries %}
+        {{ render_rich_text(summary) | safe }}
+    {% endfor %}
+</div>
+{% endif %}

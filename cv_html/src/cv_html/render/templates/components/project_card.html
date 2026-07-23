@@ -1,0 +1,42 @@
+<div class="project-card">
+
+    <div class="project-header">
+
+        <div class="project-title-area">
+
+            <div class="project-name">
+                {{ project.name }}
+            </div>
+
+            <div class="overflow-labels">
+                {% for label in project.labels %}
+                <span class="overflow-label-tag">{{ label }}</span>
+                {% endfor %}
+                <span class="overflow-label-more" hidden>+ More</span>
+            </div>
+
+        </div>
+
+        <div class="project-links">
+            {% for link in project.links %}
+            {% if not loop.first %}
+            <span class="project-link-divider">|</span>
+            {% endif %}
+            <a class="project-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                {{ render_icon(get_link_icon(link.title), "project-link-icon") | safe }}
+                <span>{{ link.title }}</span>
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <ul class="project-bullets">
+        {% for bullet in project.bullets %}
+        <li class="bullet">
+            {{ render_rich_text(bullet) | safe }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
